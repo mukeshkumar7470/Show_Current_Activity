@@ -25,6 +25,7 @@ public class FloatingView extends LinearLayout {
     private TextView mTvPackageName;
     private TextView mTvClassName;
     private ImageView mIvClose;
+    private LinearLayout liShow;
 
     public FloatingView(Context context) {
         super(context);
@@ -38,14 +39,20 @@ public class FloatingView extends LinearLayout {
         mTvPackageName = (TextView) findViewById(R.id.tv_package_name);
         mTvClassName = (TextView) findViewById(R.id.tv_class_name);
         mIvClose = (ImageView) findViewById(R.id.iv_close);
+        liShow = (LinearLayout) findViewById(R.id.liShow);
 
         mIvClose.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                mContext.startService(
+                /*mContext.startService(
                         new Intent(mContext, TrackerService.class)
                                 .putExtra(TrackerService.COMMAND, TrackerService.COMMAND_CLOSE)
-                );
+                );*/
+               if (liShow.getVisibility() == VISIBLE){
+                   liShow.setVisibility(GONE);
+               } else  {
+                   liShow.setVisibility(VISIBLE);
+               }
             }
         });
     }

@@ -14,7 +14,7 @@ public class TrackerService extends AccessibilityService {
     public static final String COMMAND_OPEN = "COMMAND_OPEN";
     public static final String COMMAND_CLOSE = "COMMAND_CLOSE";
     TrackerWindowManager mTrackerWindowManager;
-//Hello
+
     @Override
     public void onCreate() {
         super.onCreate();

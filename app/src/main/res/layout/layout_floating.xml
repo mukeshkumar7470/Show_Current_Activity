@@ -9,6 +9,7 @@
     android:background="#ddaaaaaa">
 
     <LinearLayout
+        android:id="@+id/liShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
