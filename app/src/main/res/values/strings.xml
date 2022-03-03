@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Show Current Activity</string>
+    <string name="accessibility_service_description">Show Current Activity</string>
+</resources>
